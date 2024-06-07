@@ -45,11 +45,18 @@ struct ContentView: View {
         .background(backgroundColor)
         .cornerRadius(10)
         .padding(4)
+        .background {
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(lineWidth: 4)
+                .frame(width: 130, height: 130)
+                
+        }
+        
     }
 }
 
 #Preview {
-    HStack {
+    HStack(spacing: 10.0) {
         ContentView(fruit: .apple, count: 5)
         ContentView(fruit: .orange, count: 15)
     }

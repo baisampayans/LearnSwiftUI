@@ -44,6 +44,7 @@ struct ContentView: View {
         .frame(width: 120, height: 120)
         .background(backgroundColor)
         .cornerRadius(10)
+        .padding(4)
     }
 }
 
